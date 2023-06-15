@@ -17,4 +17,16 @@ func main() {
 			fmt.Println(k)
 		}
 	}
+
+	f1([]int{1, 3, 5, 4, 2, 6, 7, 8})
+}
+
+// [1,3,5,4,2]
+func f1(arr []int) {
+	len := len(arr)
+	for _, v := range arr {
+		if v == len {
+			fmt.Println(v + 1)
+		}
+	}
 }
